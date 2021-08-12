@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# A Rail App as a data producing API. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
+In this project all the controller methods are set up in such a way that the 7 Restful controllers render data instead of HTML. It is in a way, building a pure vanila RESTful resources.
 * Deployment instructions
 
 * ...
