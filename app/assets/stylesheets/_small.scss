@@ -1,0 +1,122 @@
+@import 'variables';
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+   
+}
+
+/* grid design*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.limited{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.column{
+    padding: 0 2vw;
+    margin:  .75rem 0 .75rem 0;
+}
+
+
+
+/*header*/
+header{
+    background-color: $primaryColor;
+   
+}
+
+
+.small-12{
+    flex-basis: 100%;
+
+}
+
+
+
+header .img-responsive{
+    float: left;
+    height: 85px;
+    padding-right: 10px;
+    
+}
+
+header h1, header h2{
+    margin: 0;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+}
+
+header h1{
+   padding-top: .5rem;
+   font-size: 1.9rem;
+}
+
+header h2{
+    /*padding:.2rem;*/
+    font-size: 1.05rem;
+}
+
+/* main */
+
+main{
+    margin: 1rem 0 .3rem 0;
+}
+
+
+
+main h1{
+    color: $primaryColor;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+    font-size: 2rem;
+    
+}
+
+main .desc{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#kitten{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*footer*/
+
+footer{
+    background-color: $primaryColor;
+    margin: 1rem 0 0 0;
+   
+    
+}
+
+footer h2{
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 1rem 0 .3rem 0;
+}
+
+footer .img-responsive{
+    /*float: left;*/
+    height: 85px;
+    padding-right: 10px;
+    
+}
+
+/*.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}*/
