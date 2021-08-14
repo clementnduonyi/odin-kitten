@@ -11,6 +11,53 @@
   </head>
 
   <body>
+    <header>
+      <div class="row limited">
+        <div class="column small-12" >
+          <%= image_tag("img/kitten.jpg", class: "img-responsive") %>
+          <h1>Odin</h1>
+          <h2>Kittens<h2>
+        </div>
+      </div><!-- end of row -->
+    </header>
     <%= yield %>
+    <footer>
+      <div class="row limited">
+        <div class="column small-12 medium-6 large-3">
+          <h2>Partners</h2>
+          <ul>
+            <li><a href="#">The Odin Project</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Stackoverflow</a></li>
+            <li><a href="#">Andala</a></li>
+          </ul>
+        </div>
+        <div class="column small-12 medium-6 large-3">
+          <h2>Quick links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="column small-12 medium-6 large-3">
+          <h2>Social</h2>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Whatshapp</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="column small-12 medium-6 large-3">
+          <h2>About</h2>
+          <%= image_tag("img/kitten.jpg", class: "img-responsive") %>
+            <p>&copy; 2021 &bull; all rights reserved.</p>
+        </div>
+      </div><!-- end of row-->
+    </footer>
+
   </body>
 </html>
