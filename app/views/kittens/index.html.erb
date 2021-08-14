@@ -1,0 +1,32 @@
+<p><%= notice %></p>
+<main class="clearfix">
+    <div class="row limited">
+        <div class="column small-12">
+            <h1>Kittens</h1>
+        </div>
+    </div>
+    
+    <div class="row limited">
+        <% @kittens.each do |kitten| %>
+        <div class="column small-12 medium-6 large-3">
+            <span id="kitten"><%= kitten.name %></span> <br />
+            <span class="desc">Age: </span><%= kitten.age %> <br />
+            <span class="desc">Cuteness:</span> <%=  kitten.cuteness %> <br />
+            <span class="desc">Softness: </span><%= kitten.softness %> <br />
+            
+            <%= link_to "Show", kitten_path(kitten) %> | 
+            <%= link_to "Edit", edit_kitten_path(kitten) %> | 
+            
+            <%= link_to "Delete", kitten, method: :delete, data: {confirmation: "Ar you sure about this?"} %>
+        </div>
+         <% end %>
+    </div>
+    <div class="row limited">
+        <div class="column small-12">
+           <%= link_to "New Kitten", new_kitten_path, class: "button" %> 
+        </div>
+    </div>
+     
+</main>
+
+

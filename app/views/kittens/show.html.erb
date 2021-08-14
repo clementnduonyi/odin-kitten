@@ -1,0 +1,10 @@
+<div class="row limited">
+    <div class="column small-12">
+        <p>Name: <%= @kitten.name %></p>
+        <p>Age: <%= @kitten.age %></p>
+        <p>Cuteness: <%= @kitten.cuteness %></p>
+        <p>Softness: <%= @kitten.softness %></p>
+        <%= link_to "Edit", edit_kitten_path %>|
+        <%= link_to "Back", kittens_path %>
+    </div>
+</div>
